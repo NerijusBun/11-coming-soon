@@ -12,7 +12,14 @@
 }
 
 .container > .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px 0;
     width: 1000px;
+}
+
+.container > .column.right {
+    width: 40%;
 }
 
 @media (max-width: 1100px) {
@@ -23,7 +30,11 @@
 
 @media (max-width: 900px) {
     .container > .row {
+        flex-direction: column;
         width: 600px;
+    }
+    .container > .row > .column {
+        width: 100%;
     }
 }
 
