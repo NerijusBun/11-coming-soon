@@ -10,7 +10,6 @@
 .container > .short-row {
     width: 600px;
 }
-
 .container > .row {
     display: flex;
     justify-content: space-between;
@@ -18,7 +17,13 @@
     width: 1000px;
 }
 
-.container > .column.right {
+.container > .row > .column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
+}
+.container .column.right {
     width: 40%;
 }
 
@@ -39,8 +44,8 @@
 }
 
 @media (max-width: 700px) {
-    .container > .short-row,
-    .container > .row {
+    .container > .row,
+    .container > .short-row {
         width: 400px;
     }
 }
