@@ -5,7 +5,7 @@
     border: 1.3em solid #fff;
     border-radius: 5em;
     position: absolute;
-    bottom: 40px;
+    bottom: 5px;
 }
 .mouse::after {
     content: '';
